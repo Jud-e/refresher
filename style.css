@@ -1,0 +1,15 @@
+#countLabel{
+    display: block;
+    font-size: 10em;
+    text-align: center;
+}
+#btnContainer{
+    text-align: center;
+}
+.btn{
+    padding: 10px;
+    border-radius: 2em;
+    color: white;
+    background-color: black;
+    border: none;
+}
