@@ -124,5 +124,57 @@ resetBtn.onclick = function(){
 //         }
 // }
 
-let message =5;
-message < 3? console.log("yes"):console.log("no");
+// let message =5;
+// message < 3? console.log("yes"):console.log("no");
+
+//switch cases
+
+// let day = 3;
+// switch (day) {
+//     case 1:
+//         console.log(`today is monday`)
+//         break;
+
+//     default:
+//         console.log("not a day");
+//         break;
+// }
+// let testScore = 50;
+// let letterGrade;
+
+// switch (true) {
+//     case testScore >= 90:
+//         letterGrade = "A";
+//         console.log(letterGrade);
+//         break;
+//     case testScore >= 80:
+//             letterGrade = "B";
+//             console.log(letterGrade);
+//             break;
+//     case testScore >= 70:
+//         letterGrade = "C";
+//         console.log(letterGrade);
+//         break;
+//     case testScore >= 60:
+//         letterGrade = "D";
+//         console.log(letterGrade);
+//         break;
+//     case testScore >= 50:
+//         letterGrade = "E";
+//         console.log(letterGrade);
+//         break;
+//     default:
+//         letterGrade = "F";
+//         console.log(letterGrade);
+//         break;
+// }
+
+/*const email = "johndoe@gmail.com";
+let username = email.slice(0, email.indexOf("@"));
+console.log(username);
+let extension = email.slice(email.indexOf("@") +1);
+console.log(extension);*/
+
+//method chaining
+
+//while loop
