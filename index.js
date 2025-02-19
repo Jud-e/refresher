@@ -95,31 +95,34 @@ resetBtn.onclick = function(){
     countLabel.textContent = count;
 }*/
 
-const myCheckbox = document.getElementById("myCheckbox");
-const visaBtn = document.getElementById("visaBtn");
-const masterBtn = document.getElementById("masterBtn");
-const paypalBtn = document.getElementById("paypalBtn");
-const mySubmit = document.getElementById("mySubmit");
-const subResult = document.getElementById("status");
-const paymentResult = document.getElementById("paymentResult");
+// const myCheckbox = document.getElementById("myCheckbox");
+// const visaBtn = document.getElementById("visaBtn");
+// const masterBtn = document.getElementById("masterBtn");
+// const paypalBtn = document.getElementById("paypalBtn");
+// const mySubmit = document.getElementById("mySubmit");
+// const subResult = document.getElementById("status");
+// const paymentResult = document.getElementById("paymentResult");
 
-mySubmit.onclick = function(){
-    if (myCheckbox.checked) {
-        subResult.textContent = "You are subscribed";
-    }
-    else{
-        subResult.textContent = "You are NOT subscribed";
-    }
+// mySubmit.onclick = function(){
+//     if (myCheckbox.checked) {
+//         subResult.textContent = "You are subscribed";
+//     }
+//     else{
+//         subResult.textContent = "You are NOT subscribed";
+//     }
 
-    if (visaBtn.checked) {
-        paymentResult.textContent = "Payment with VISA card";
-    }
-    else if (masterBtn.checked) {
-        paymentResult.textContent = "Payment with mastercard";
-    }
-    else if (paypalBtn.checked) {
-        paymentResult.textContent = "Payment with PayPal";   }
-        else{
-            paymentResult.textContent = "No payment methods selected";
-        }
-}
+//     if (visaBtn.checked) {
+//         paymentResult.textContent = "Payment with VISA card";
+//     }
+//     else if (masterBtn.checked) {
+//         paymentResult.textContent = "Payment with mastercard";
+//     }
+//     else if (paypalBtn.checked) {
+//         paymentResult.textContent = "Payment with PayPal";   }
+//         else{
+//             paymentResult.textContent = "No payment methods selected";
+//         }
+// }
+
+let message =5;
+message < 3? console.log("yes"):console.log("no");
