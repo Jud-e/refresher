@@ -181,7 +181,7 @@ console.log(extension);*/
 //for loop
 //functions = reusable code
 
-let textBox = document.getElementById("textbox");
+/*let textBox = document.getElementById("textbox");
 let temp;
 let farhrenheit = document.getElementById("farhrenheit");
 let kelvin = document.getElementById("kelvin");
@@ -189,7 +189,6 @@ let result = document.getElementById("result");
 function convert() {
     if (farhrenheit.checked) {
         temp = Number(textBox.value);
-        // result.textContent = (temp * (9/5)) + 32;
         result.textContent = (temp * (9/5)) + 32 + "F";
         // console.log(temp);
         
@@ -200,7 +199,13 @@ function convert() {
         
     }
     else{
-        console.log("error");
+        result.textContent ="error";
     }
 }
+*/
 
+//arrays: push(add), pop(remove), unshift ( add to front), shift (remove from front), length, indexOf
+//for(let fruit of fruits)  a for loop to iterate through an array
+
+//spread operator: allows arrays and string to be expanded
+// rest operator: allows arrays and string to be reduced
