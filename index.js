@@ -181,21 +181,26 @@ console.log(extension);*/
 //for loop
 //functions = reusable code
 
-let input = document.getElementById("textbox");
-let temp = Number(input);
-let celsius = document.getElementById("celsius");
-let farhenheit = document.getElementById("farhenheit");
-let kelvin = document.getElementById("kelvin");;
+let textBox = document.getElementById("textbox");
+let temp;
+let farhrenheit = document.getElementById("farhrenheit");
+let kelvin = document.getElementById("kelvin");
 let result = document.getElementById("result");
 function convert() {
-    if (farhenheit.checked) {
+    if (farhrenheit.checked) {
+        temp = Number(textBox.value);
         // result.textContent = (temp * (9/5)) + 32;
-        console.log(temp);
+        result.textContent = (temp * (9/5)) + 32 + "F";
+        // console.log(temp);
         
     }else if (kelvin.checked) {
-        // result.textContent = input + 273.15;
-        console.log(temp);
+        temp = Number(textBox.value);
+        result.textContent = input + 273.15 + "K";
+        // console.log(temp);
         
+    }
+    else{
+        console.log("error");
     }
 }
 
