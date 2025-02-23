@@ -178,3 +178,24 @@ console.log(extension);*/
 //method chaining
 
 //while loop
+//for loop
+//functions = reusable code
+
+let input = document.getElementById("textbox");
+let temp = Number(input);
+let celsius = document.getElementById("celsius");
+let farhenheit = document.getElementById("farhenheit");
+let kelvin = document.getElementById("kelvin");;
+let result = document.getElementById("result");
+function convert() {
+    if (farhenheit.checked) {
+        // result.textContent = (temp * (9/5)) + 32;
+        console.log(temp);
+        
+    }else if (kelvin.checked) {
+        // result.textContent = input + 273.15;
+        console.log(temp);
+        
+    }
+}
+
