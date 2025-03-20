@@ -222,3 +222,20 @@ function uppercase(element, index, array){
 function display(elements) {
     console.log(elements);
 }
+//.map() = accepts a callback and applies the function and creates a new array
+//.filter() = accepts a callback and creates a new array with elements that pass the test
+
+let names = ["Jude", "Judith", "Evelyn", "Noah", "Uchechi"]
+let shortName = names.filter(shortNames);
+let longName = names.filter(longNames);
+
+console.log(shortName);
+console.log(longName);
+
+function shortNames(element){
+    return element.length <=5;
+}
+function longNames(element){
+    return element.length >5;
+}
+//genuinely this is the first time i've encountered this method.
