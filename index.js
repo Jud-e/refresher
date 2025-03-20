@@ -209,3 +209,16 @@ function convert() {
 
 //spread operator: allows arrays and string to be expanded
 // rest operator: allows arrays and string to be reduced
+// callback: function that is passed to another function
+//for each method:
+let fruits  = ["apple", "orange","banana"];
+
+fruits.forEach(uppercase);
+fruits.forEach(display);
+
+function uppercase(element, index, array){
+    array[index] = element.toUpperCase();
+}
+function display(elements) {
+    console.log(elements);
+}
