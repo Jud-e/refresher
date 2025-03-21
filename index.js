@@ -204,7 +204,8 @@ function convert() {
 }
 */
 
-//arrays: push(add), pop(remove), unshift ( add to front), shift (remove from front), length, indexOf
+//ARRAYS
+//push(add), pop(remove), unshift ( add to front), shift (remove from front), length, indexOf
 //for(let fruit of fruits)  a for loop to iterate through an array
 
 //spread operator: allows arrays and string to be expanded
@@ -263,3 +264,60 @@ const total = numbers.reduce((accumulator,element)=> accumulator+element);
 
 console.log(squares);*/
 
+//JAVASCRIPT OBJECTS object= {key:value}
+/*const person1 ={
+    firstName: "Spongebob",
+    lastName: "Squarepants",
+    age: 22,
+    isEmployed: true,
+    sayHello:  () => console.log(`Hi I am ${this.firstName}`)
+}
+const person2 = {
+    firstName: "Patrick",
+    lastName: "Star",
+    age: 42,
+    isEmployed: false,
+}
+// note that the "this" keyword doesn't work with arrow functions cuz they don't have their own context.
+const person3 ={
+    name: "Spongebob",
+    favFood: "hamburgers",
+    sayHello: function(){console.log(`Hi! I am ${this.favFood}`)}
+}
+console.log(person1.isEmployed);
+console.log(`${person1.firstName} and ${person2.firstName} went to buy bread`);
+console.log(person2.age);
+person1.sayHello();
+person3.sayHello();*/
+
+//CONSTRUCTORS
+//note the upper case for the function titles when making a constructor[don't forget the "new" keyword]
+/*function Car(make,model,year,color){
+    this.make = make,
+    this.model = model,
+    this.year = year,
+    this.color = color
+}
+
+const car1 = new Car("Ford","Mustang",2024,"red");
+console.log(car1.model);*/
+
+//CLASSES
+class Product{
+    constructor(name,price){
+        this.name = name, this.price = price
+    }
+
+    displayProduct(){
+        console.log(`Product: ${this.name}`);
+        console.log(`Price: ${this.price.toFixed(2)}`);
+    }
+    calculateTotal(salesTax){
+        return this.price + (this.price * salesTax);
+    }
+}
+const product1 = new Product("Shirt",19);
+const product2 = new Product("Pants",154)
+product1.displayProduct();
+console.log(product1.calculateTotal(0.05));
+console.log(product2.calculateTotal(0.05));
