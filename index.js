@@ -211,31 +211,55 @@ function convert() {
 // rest operator: allows arrays and string to be reduced
 // callback: function that is passed to another function
 //for each method:
-let fruits  = ["apple", "orange","banana"];
+// let fruits  = ["apple", "orange","banana"];
 
-fruits.forEach(uppercase);
-fruits.forEach(display);
+// fruits.forEach(uppercase);
+// fruits.forEach(display);
 
-function uppercase(element, index, array){
-    array[index] = element.toUpperCase();
-}
-function display(elements) {
-    console.log(elements);
-}
-//.map() = accepts a callback and applies the function and creates a new array
+// function uppercase(element, index, array){
+//     array[index] = element.toUpperCase();
+// }
+// function display(elements) {
+//     console.log(elements);
+// }
+// .map() = accepts a callback and applies the function and creates a new array
 //.filter() = accepts a callback and creates a new array with elements that pass the test
 
-let names = ["Jude", "Judith", "Evelyn", "Noah", "Uchechi"]
-let shortName = names.filter(shortNames);
-let longName = names.filter(longNames);
+// let names = ["Jude", "Judith", "Evelyn", "Noah", "Uchechi"]
+// let shortName = names.filter(shortNames);
+// let longName = names.filter(longNames);
 
-console.log(shortName);
-console.log(longName);
+// console.log(shortName);
+// console.log(longName);
 
-function shortNames(element){
-    return element.length <=5;
-}
-function longNames(element){
-    return element.length >5;
-}
+// function shortNames(element){
+//     return element.length <=5;
+// }
+// function longNames(element){
+//     return element.length >5;
+// }
 //genuinely this is the first time i've encountered this method.
+// .reduce() = reduces the elements of an array to a single value(works with a callback)
+// accumulator is a paremeter in this
+
+// it is possible to pass an entire function as a variable: 
+/*const numbers = [1,2,3,4,5];
+
+const squared = numbers.map(function(element) {
+    return element = element * 2
+});
+const sum = numbers.reduce(function(accumulator,element) {
+    return accumulator + element;
+})
+console.log(squared);
+console.log(sum);*/
+
+//arrow functions: (paremeters)=>some code:
+/*const numbers = [1,2,3,4,5,6];
+const squares = numbers.map((element)=> Math.pow(element,2))
+const evenNum = numbers.filter((element) => element % 2 === 0);
+const oddNum = numbers.filter((element) => element % 2 !== 0);
+const total = numbers.reduce((accumulator,element)=> accumulator+element);
+
+console.log(squares);*/
+
