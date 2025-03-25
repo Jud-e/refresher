@@ -317,7 +317,9 @@ class Product{
     }
 }
 const product1 = new Product("Shirt",19);
-const product2 = new Product("Pants",154)
+const product2 = new Product("Pants",154);
+const product3 = new Product("Underwear",154);
 product1.displayProduct();
 console.log(product1.calculateTotal(0.05));
 console.log(product2.calculateTotal(0.05));
+console.log(product3.calculateTotal(0.05));
