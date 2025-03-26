@@ -325,7 +325,7 @@ console.log(product2.calculateTotal(0.05));
 console.log(product3.calculateTotal(0.05)); */
 
 //static keyword: defines properties that belong to the class.
-class MathUtil {
+/*class MathUtil {
     static PI = 3.14;
     static getCircumference(radius){
         return 2* MathUtil.PI * radius;
@@ -354,4 +354,22 @@ const user3 = new User("Sandy");
 User.getUserCount();
 user1.sayHello();
 user2.sayHello();
-user3.sayHello()
+user3.sayHello()*/
+
+//INHERITANCE
+//CHILD INHERITS PROPERTIES FROM ITS PARENTS
+class Animal{
+    alive = true;
+    eat(){
+        console.log(`This ${this.name} is eating`);
+    }
+    sleep(){
+        console.log(`This ${this.name} is sleeping`);
+    }
+}
+class Rabbit extends Animal{
+    name = "rabbit";
+}
+
+const rabbit = new Rabbit();
+rabbit.sleep();
