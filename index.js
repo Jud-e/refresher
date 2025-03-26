@@ -324,3 +324,25 @@ console.log(product1.calculateTotal(0.05));
 console.log(product2.calculateTotal(0.05));
 console.log(product3.calculateTotal(0.05)); */
 
+//static keyword: defines properties that belong to the class.
+class MathUtil {
+    static PI = 3.14;
+    static getCircumference(radius){
+        return 2* MathUtil.PI * radius;
+    }
+}
+
+console.log(MathUtil.getCircumference(2));
+
+class User{
+    static userCount = 0;
+    constructor(username){
+        this.username = username;
+        User.userCount++;
+    }
+}
+
+const user1 = new User("Spongebob");
+const user2 = new User("Patrick");
+console.log(user1.username);
+console.log(User.userCount);
