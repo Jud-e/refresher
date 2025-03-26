@@ -303,7 +303,7 @@ const car1 = new Car("Ford","Mustang",2024,"red");
 console.log(car1.model);*/
 
 //CLASSES
-class Product{
+/* class Product{
     constructor(name,price){
         this.name = name, this.price = price
     }
@@ -322,4 +322,5 @@ const product3 = new Product("Underwear",154);
 product1.displayProduct();
 console.log(product1.calculateTotal(0.05));
 console.log(product2.calculateTotal(0.05));
-console.log(product3.calculateTotal(0.05));
+console.log(product3.calculateTotal(0.05)); */
+
