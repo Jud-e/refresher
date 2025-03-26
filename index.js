@@ -358,7 +358,7 @@ user3.sayHello()*/
 
 //INHERITANCE
 //CHILD INHERITS PROPERTIES FROM ITS PARENTS
-class Animal{
+/*class Animal{
     alive = true;
     eat(){
         console.log(`This ${this.name} is eating`);
@@ -369,7 +369,25 @@ class Animal{
 }
 class Rabbit extends Animal{
     name = "rabbit";
+
+    run(){
+        console.log(`This ${this.name} is running`);
+    }
+}
+
+class Eagle extends Animal{
+    name = "eagle";
+
+    fly(){
+        console.log(`This ${this.name} is flying`);
+    }
 }
 
 const rabbit = new Rabbit();
+const eagle = new Eagle();
 rabbit.sleep();
+rabbit.eat();
+rabbit.run();
+eagle.sleep();
+eagle.eat();
+eagle.fly();*/
