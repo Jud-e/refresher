@@ -1,3 +1,6 @@
+import "./book.css";
+import { FaHeart } from "react-icons/fa";
+
 const Book = ({_id, title, category, author, numberInStock, price, publishYear, liked}) => {
     return ( 
         <tr>
@@ -7,8 +10,8 @@ const Book = ({_id, title, category, author, numberInStock, price, publishYear, 
             <td>{author}</td>
             <td>{numberInStock}</td>
             <td>{price}</td>
-            <td>{publishYear}</td>
-            <td>{liked}</td>
+            <td>{publishYear.substring(0, 4)}</td>
+            <td><FaHeart/></td>
             <td><button>Delete</button></td>
         </tr>
      );

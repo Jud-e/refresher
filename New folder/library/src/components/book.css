@@ -1,0 +1,9 @@
+table{
+    padding: auto;
+}
+table td{
+    padding: 7px;
+}
+table td button{
+    background-color: red;
+}
