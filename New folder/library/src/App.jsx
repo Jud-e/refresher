@@ -1,15 +1,19 @@
 import { useState } from 'react'
 import './App.css'
 import Library from './components/library'
-import { books } from "./assets/bookService";
+import { getBooks as bookies } from "./assets/bookService";
 
 function App() {
-  const [count, setCount] = useState(0)
+  let [books, setCount] = useState(bookies);
 
+  const onDelete = (id)=>{
+    const newBooks = books.filter(book=>book.id!==id);
+    setCount(newBooks);
+  }
   return (
     <>
       <h1>My Book Library</h1>
-      <Library book={books}/>
+      <Library book={books} onDelete={onDelete}/>
     </>
   )
 }

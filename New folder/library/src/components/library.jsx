@@ -1,6 +1,6 @@
 import Book from "./book";
 
-const Library = ({book}) => {
+const Library = ({book, onDelete=f=>f}) => {
     return ( 
         <>
             <p>Showing {book.length} books</p>
@@ -16,7 +16,7 @@ const Library = ({book}) => {
                 <th>Action(s)</th>
                 <hr />
                 {
-                    book.map(book => <Book key={book._id} {...book}/>)
+                    book.map(book => <Book key={book._id} {...book} onDelete={onDelete}/>)
                 }
             </table>
         </>
