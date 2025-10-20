@@ -14,10 +14,10 @@ const Library = ({book, onDelete=f=>f,change=f=>f}) => {
                 <th>Year</th>
                 <th>Liked</th>
                 <th>Action(s)</th>
-                <hr />
+                <tbody>
                 {
                     book.map(book => <Book key={book._id} {...book} onDelete={onDelete} change={change}/>)
-                }
+                }</tbody>
             </table>
         </>
      );
